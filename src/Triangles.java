@@ -8,17 +8,18 @@ public class Triangles extends Shapes {
             this.base = base;
         }
 
-        double calculateArea() {
-            return this.height * this.base;
+        @Override
+        public double calculateArea() {
+            return (this.height * this.base)/2;
         }
 
-        double calculatePerimeter() {
+        @Override
+        public double calculatePerimeter() {
             return (this.height + this.base) + Math.sqrt(this.height ^ 2 + this.base ^ 2);
         }
 
-        void displayColor() {
-            System.out.println("the color of triangle is " + "=>" + super.color);
-            return;
+        @Override
+        public void display() {
+            System.out.println("This is a" + super.color + " " + "triangle");
         }
     }
-}
