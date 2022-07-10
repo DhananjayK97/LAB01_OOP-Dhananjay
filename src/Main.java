@@ -1,16 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        Circles c1 = new Circles("red", 10);
-        System.out.println(c1.calculateArea());
-        c1.displayColor();
+        Circles circles = new Circles("red", 6);
+        System.out.println(circles.calculateArea());
+        circles.display();
 
-        Squares s1 = new Squares("blue", 4);
-        System.out.println(s1.calculatePerimeter());
-        s1.displayColor();
+        Triangles triangle = new Triangles("orange", 12, 7);
+        System.out.println(triangle.calculateArea());
+        triangle.display();
 
-        Triangles t1 = new Triangles("orange", 12, 7);
-        System.out.println(t1.calculateArea());
-        t1.displayColor();
-
+        Rectangles rectangle = new Rectangles("green", 2, 3 );
+        System.out.println(rectangle.calculateArea());
+        System.out.println(rectangle.calculatePerimeter());
+        rectangle.display();
+        
+        Squares square = new Squares("blue", 5);
+        System.out.println(square.calculatePerimeter());
+        square.display();
     }
 }
