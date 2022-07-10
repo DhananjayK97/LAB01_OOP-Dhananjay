@@ -8,17 +8,20 @@ public class Circles extends Shapes {
         this.radius = radius;
     }
 
-    double calculateArea() {
+    @Override
+    public double calculateArea() {
         return this.PI * Math.pow(this.radius, 2);
     }
 
-    double calculatePerimeter() {
-        return 2 * this.PI * this.radius;
+    @Override
+    public double calculatePerimeter() {
+        return 2 *PI*this.radius;
     }
 
-    void displayColor() {
-        System.out.println("the color of circle is " + "=>" + super.color);
-        return;
+    @Override
+    void display(){
+        System.out.println("This is a " + super.color + " " + "Circle");
+
     }
 
 }
