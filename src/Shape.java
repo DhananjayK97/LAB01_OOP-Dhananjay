@@ -13,8 +13,7 @@ class Shapes {
         return 0;
     }
 
-    void displayColor(){
-        System.out.println("the collor is " + "" + this.color);
-        return;
+    void display(){
+        System.out.println("This is a shape with color "+ this.color);
     }
 }
